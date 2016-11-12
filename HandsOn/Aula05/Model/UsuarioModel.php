@@ -7,7 +7,7 @@
 	class UsuarioModel{
 
 		private $banco;
-		private $entidade;
+		public $entidade;
 
 		public function __construct(Banco $banco, EntityUsuario $usuario){
 			$this->banco = $banco;

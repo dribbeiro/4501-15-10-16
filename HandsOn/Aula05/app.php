@@ -1,5 +1,7 @@
 <?php
 
+	require('Lib/autoload.php');
+
 	use Lib\Banco;
 	use Entities\EntityUsuario;
 	use Entities\EntityCliente;
