@@ -1,7 +1,5 @@
 <?php
-	require('Model.php');
-	require('View.php');
-	require('Controller.php');
+	require('autoload.php');
 
 	$model = new Model();
 	$controller = new Controller($model);
