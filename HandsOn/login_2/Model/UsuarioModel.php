@@ -1,6 +1,5 @@
 <?php
 	namespace Model;
-	session_start();
 
 	use Lib\Db;
 	use PDO;
@@ -28,7 +27,6 @@
 
 			if($stmt->rowCount()){
 				$logado = $stmt->fetch(PDO::FETCH_OBJ);
-				$_SESSION['login'] = $logado->login;
 				return $logado;
 			}else{
 				return false;
