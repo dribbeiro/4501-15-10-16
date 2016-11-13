@@ -4,6 +4,7 @@
 
 	use Lib\Db;
 	use PDO;
+	use Entity\UsuarioEntity;
 	class UsuarioModel{
 
 		private $db;
@@ -13,7 +14,7 @@
 			$this->db = $pdo->getConn();
 		}
 
-		public function buscarUsuario($usuario){
+		public function buscarUsuario(UsuarioEntity $usuario){
 
 			$query = 'SELECT login FROM usuarios 
 							   WHERE login = :login
